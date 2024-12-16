@@ -11,6 +11,8 @@
             font-family: 'courier'; /*"Lucida Console", Courier, monospace;*/
             background-color: black;
             color: white;
+            
+            
         }
 
 
@@ -50,7 +52,7 @@
             height: 200px;
             top: 50%;
             left: 50%;
-            margin-top: -70px;
+            margin-top: -10px;
             margin-left: -125px;
         }
 
@@ -67,6 +69,7 @@
 
         .cake > * {
             position: absolute;
+            
         }
 
         .layer {
@@ -75,9 +78,9 @@
             width: 250px;
             height: 100px;
             border-radius: 50%;
-            background-color: #553c13;
-            box-shadow: 0 2px 0px #6a4b18, 0 4px 0px #33240b, 0 6px 0px #32230b, 0 8px 0px #31230b, 0 10px 0px #30220b, 0 12px 0px #2f220b, 0 14px 0px #2f210a, 0 16px 0px #2e200a, 0 18px 0px #2d200a, 0 20px 0px #2c1f0a, 0 22px 0px #2b1f0a, 0 24px 0px #2a1e09, 0 26px 0px #2a1d09, 0 28px 0px #291d09, 0 30px 0px #281c09;
-        }
+            background-color: #81055c;
+            box-shadow: 0 2px 0px #b40b82, 0 4px 0px #c90db9, 0 6px 0px #e607c8, 0 8px 0px #e607c8, 0 10px 0px #e607c8, 0 12px 0px #fa9ce6, 0 14px 0px #e607c8, 0 16px 0px #e607c8, 0 18px 0px #e607c8, 0 20px 0px #e607c8, 0 22px 0px #e60751, 0 24px 0px #f529a0, 0 26px 0px #e607c8, 0 28px 0px #ffffff, 0 30px 0px #ffffff;
+        }#e607c8
 
         .layer-top {
             top: 0px;
@@ -107,8 +110,8 @@
             right: 5px;
             bottom: 6px;
             left: 5px;
-            background-color: #f4ebdc;
-            box-shadow: 0 0 4px #f6efe3, 0 0 4px #f6efe3, 0 0 4px #f6efe3;
+            background-color: #d0dbf0;
+            box-shadow: 0 0 4px #d0dbf0, 0 0 4px #d0dbf0, 0 0 4px #d0dbf0;
             border-radius: 50%;
             z-index: 1;
         }
@@ -119,7 +122,7 @@
             height: 60px;
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
-            background-color: #f0e4d0;
+            background-color: #d0dbf0;
         }
 
         .drip1 {
@@ -203,6 +206,8 @@
                 box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
             }
         }
+
+       
 
         #cake-holder .cake-off {
             opacity: 0;
@@ -321,7 +326,11 @@ body {
   margin: 0;
   font-family: 'Caveat', serif;
   overflow: hidden;
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(2, 2, 15);
+  background-image: url('assets/hee 2.png'); /* Replace with your image URL */
+             /* Adjusts the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevents repeating the image */
+            background-position: center; /* Centers the image */
 }
 
 	</style>
@@ -334,7 +343,7 @@ body {
    
     <!-- other cards -->
     
-    <div class="Picture">
+   <!-- div> <div class="Picture">
       <img class="Picture-img" src="https://iili.io/2GFoHkN.jpg" alt="" />
       <div class="Picture-note"><span>Happy 🎉❤️</span></div>
   </div>
@@ -398,7 +407,7 @@ body {
   <div class="Picture">
     <img class="Picture-img" src="https://iili.io/2GFoHkN.jpg" alt="" />
     <div class="Picture-note"><span>Hugs 💖🎂</span></div>
-  </div>
+  </div> -->
   
   
   
@@ -410,12 +419,12 @@ body {
 
 <h1>Birthday Cake 🎂</h1>
 <br>
-<button id="start">START (required on Chrome)</button>
+<button id="start">Click</button>
 <button style="display: none" id="startconsoledebug">enable console logs</button>
 <button style="display: none" id="stopconsoledebug">disable console logs</button>
 <br>
 <br>
-<div id="cake-holder" style="opacity: 0">
+<div id="cake-holder" style="opacity: 0 ">
 	<div class="cake">
 		<div class="plate"></div>
 		<div class="layer layer-bottom"></div>
@@ -430,11 +439,12 @@ body {
 		</div>
 	</div>
 	<div class="text-center">
-		<h5 class="cake-off">❣ Happy Birthday Dude ❣ </h5>
+		<h1 class="cake-off">❣ Happy Birthday Dude ❣ </h1>
 		<p class="cake-off">❤ Wish you best ❤ </p>
 	</div>
 
 </div>
+
 <!--
 	<canvas id="meter" width="500" height="50"></canvas>
 -->
